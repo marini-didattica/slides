@@ -1,11 +1,18 @@
 # AGENTS.md
-A [Slidev](https://sli.dev) presentation (Slidev 53 + Vue 3).
+A collection of [Slidev](https://sli.dev) presentations (Slidev 53 + Vue 3) in
+one repository.
 
-
-## Structure and good practices
-- Keeps files organized by topic or by single slides. Each slide/groups of slides shoudl be under `slides` folder
-- Try to stick to markdown syntax as much as possible. If a more involved Vue component is needed then ask befure creating one. In general all slides should contain not much html and should be easily human readable
-- Use css root variables as much as possible; avoid using colors directly so that the whole presentation could be themed tweking the main colors in the theme repo (`theme/styles/theme.css`)
+## Structure
+- Every deck lives in `src/<track>/<deck>/`, with `0-main.md` as its entry point.
+  Tracks are `prime`, `seconde`, `olimpiadi` and `extra`.
+- Keep files organized by topic or by single slides. Each slide/groups of slides
+  should be under the deck folder.
+- Try to stick to markdown syntax as much as possible. If a more involved Vue
+  component is needed then ask before creating one. In general all slides should
+  contain not much html and should be easily human readable.
+- Use css root variables as much as possible; avoid using colors directly so
+  that the whole presentation could be themed tweaking the main colors in the
+  theme repo (`theme/styles/theme.css`).
 
 ## Theme & addon (separate repositories)
 
