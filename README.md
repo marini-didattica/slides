@@ -48,7 +48,16 @@ with `--base "/<track>/<deck>/"` and writes the result to
 Every push to `main` runs `.github/workflows/deploy.yml`, which builds all decks
 and deploys `dist/` to the Cloudflare Pages project `marini-didattica-slides`:
 
-<https://marini-didattica-slides.pages.dev/>
+<https://slides.didattica.mattia-marini.com/>
 
 The repository needs the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`
-secrets. See `../CLOUDFLARE.md` for the account setup.
+secrets. See `../workspace-meta/CLOUDFLARE.md` for the account setup.
+
+The custom domain `slides.didattica.mattia-marini.com` needs this DNS record:
+
+```text
+Type: CNAME
+Name: slides
+Target: marini-didattica-slides.pages.dev
+Proxy: Proxied
+```
