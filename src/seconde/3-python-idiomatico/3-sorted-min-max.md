@@ -10,6 +10,8 @@ Ordinare e cercare senza riscrivere algoritmi
 </div>
 
 ---
+class: table-sm
+---
 
 # Funzioni integrate
 
@@ -242,7 +244,7 @@ print("".join(sorted(parola_a)))   # "amor"
 
 ---
 
-# Ordinare per un criterio: `key`
+# Ordinare con `key`
 
 A volte non vogliamo l'ordine naturale, ma un ordine basato su qualcos'altro.
 
@@ -254,7 +256,15 @@ print(sorted(parole, key=len))   # ['re', 'casa', 'sole', 'programma']
 
 `key=len` significa: *per confrontare due elementi, applica prima `len` a ciascuno*.
 
+---
+
+# `key` con `max` e `min`
+
+La stessa `key` funziona anche con `max` e `min`:
+
 ```python
+parole = ["programma", "re", "casa", "sole"]
+
 print(max(parole, key=len))      # "programma"
 ```
 
@@ -284,6 +294,8 @@ print(sorted(voti, key=lambda voto: voto[1]))
 
 > **N.B.** `lambda` è una funzione anonima compatta: la incontreremo meglio più avanti. Per ora basta sapere che `key` accetta una funzione.
 
+---
+class: table-sm
 ---
 
 # Riepilogo — `sorted`, `min`, `max`

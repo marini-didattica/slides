@@ -10,6 +10,8 @@ Sommare, ordinare e cercare senza riscrivere algoritmi
 </div>
 
 ---
+class: table-sm
+---
 
 # Funzioni integrate
 
@@ -45,8 +47,6 @@ print(sum(voti))   # 26
 ```python
 print(sum([1, 2, 3], 10))   # 16
 ```
-
-> **N.B.** `sum()` non è una scorciatoia "per furbi": è il modo normale di sommare una sequenza in Python.
 
 ---
 layout: two-cols-header
@@ -324,7 +324,15 @@ print(sorted(parole, key=len))   # ['re', 'casa', 'sole', 'programma']
 
 `key=len` significa: *per confrontare due elementi, applica prima `len` a ciascuno*.
 
+---
+
+# `key` con `max` e `min`
+
+La stessa `key` funziona anche con `max` e `min`:
+
 ```python
+parole = ["programma", "re", "casa", "sole"]
+
 print(max(parole, key=len))      # "programma"
 ```
 
@@ -352,8 +360,10 @@ print(sorted(voti, key=lambda voto: voto[1]))
 - `key=abs` ordina per **valore assoluto**.
 - `key=lambda ...` ordina per il campo scelto.
 
-> **N.B.** `lambda` è una funzione anonima compatta: la incontreremo meglio più avanti. Per ora basta sapere che `key` accetta una funzione.
+> **N.B.** `lambda` è una funzione anonima: per ora basta sapere che `key` accetta una funzione.
 
+---
+class: table-sm
 ---
 
 # Riepilogo — `sum`, `sorted`, `min`, `max`

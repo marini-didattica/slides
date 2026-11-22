@@ -32,7 +32,7 @@ print(v[-1])   # 50   -> ultimo
 print(v[-2])   # 40   -> penultimo
 ```
 
-> **N.B.** `-1` è l'ultimo elemento, `-2` il penultimo, e così via. L'indice `-len(v)` è il primo elemento.
+> **N.B.** `-len(v)` è il primo elemento della sequenza.
 
 ---
 layout: two-cols-header
@@ -81,7 +81,11 @@ sequenza[inizio:fine:passo]
 - `fine` è **escluso**;
 - `passo` è di quanto avanzare (default `1`).
 
-Tutti e tre sono opzionali:
+---
+
+# Le forme abbreviate
+
+Tutti e tre sono opzionali: le forme seguenti li omettono.
 
 | Scrittura | Significato |
 | --------- | ----------- |
@@ -256,8 +260,6 @@ print(s == s[::-1])   # True
 
 ::bottom::
 `s[::-1]` è la parola al contrario. Il confronto `s == s[::-1]` dice esattamente *"la parola è uguale alla sua inversa"*.
-
-> **N.B.** La versione con gli indici usa memoria costante, quella con lo slicing crea una copia. Per una parola la differenza è irrilevante; per una lista enorme può contare.
 
 ---
 

@@ -47,7 +47,7 @@ Funziona, ma:
 
 # Soluzione idiomatica: f-string
 
-Una **f-string** è una stringa preceduta da `f`. Dentro le graffe `{...}` si possono mettere variabili ed espressioni:
+Una **f-string** è una stringa preceduta da `f`: dentro `{...}` vanno variabili ed espressioni.
 
 ```python
 nome = "Ada"
@@ -65,13 +65,11 @@ Ciao Ada, hai 36 anni.
 - La `f` davanti alle virgolette attiva le sostituzioni.
 - Dentro `{}` va un'espressione Python qualsiasi.
 - Il resto della stringa è testo normale.
-
-> **N.B.** La f-string è il modo consigliato di costruire testo in Python moderno. Le f-string le avevamo già incontrate; ora le usiamo in modo sistematico.
 ---
 
 # Dentro le graffe: espressioni
 
-Non serve creare una variabile per ogni pezzo: dentro `{}` possiamo mettere qualsiasi espressione.
+Dentro `{}` possiamo mettere una qualsiasi espressione, non solo una variabile.
 
 ```python
 a = 7
@@ -176,7 +174,7 @@ La versione non idiomatica aggiunge spazi a mano, contando i caratteri di ogni n
 
 # Allineamento e larghezza
 
-Dentro la specifica di formato si può indicare la **larghezza** della colonna e l'**allineamento**:
+Nella specifica di formato si indicano **larghezza** e **allineamento**:
 
 ```python
 nome = "Ada"
@@ -185,7 +183,7 @@ voto = 8
 print(f"{nome:<10}{voto:>5}")
 ```
 
-- `<10` = larghezza 10, allineato a **sinistra**.
+- `<10` = larghezza **minima** 10, allineato a **sinistra**.
 - `>5` = larghezza 5, allineato a **destra**.
 - `^10` = centrato.
 
@@ -194,8 +192,6 @@ print(f"{'Nome':<10}{'Voto':>5}")
 print(f"{'Ada':<10}{8:>5}")
 print(f"{'Luca':<10}{6:>5}")
 ```
-
-> **N.B.** La larghezza è il numero minimo di caratteri: se il testo è più lungo, la colonna si allarga.
 ---
 
 # Bonus: percentuali e zeri iniziali

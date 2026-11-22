@@ -34,19 +34,14 @@ class: table-sm
 ```text
 Mi serve solo il valore di ogni elemento?
     -> for x in lista
-
 Mi servono indice e valore?
     -> for i, x in enumerate(lista)
-
 Devo modificare la lista, confrontare vicini o usare posizioni speculari?
     -> for i in range(...)
-
 Il problema è "somma", "massimo", "minimo", "ordina"?
     -> sum / max / min / sorted
-
 Devo prendere una parte della sequenza?
     -> slicing
-
 Devo costruire una frase con dei valori?
     -> f-string
 ```

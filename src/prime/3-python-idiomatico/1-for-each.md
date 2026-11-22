@@ -118,13 +118,12 @@ for valore in lista:
     print(valore)
 ```
 
-A ogni giro `valore` assume il contenuto di un elemento: prima `10`, poi `20`, poi `30`.
+`for valore in lista` si legge "per ogni valore in lista": a ogni giro `valore` assume il contenuto di un elemento, prima `10`, poi `20`, poi `30`.
 
 - Non serve `range()`.
 - Non serve `len()`.
 - Non serve `lista[i]`.
-
-> **N.B.** `for valore in lista` si legge "per ogni valore in lista". La variabile `valore` è solo un nome: possiamo chiamarla `x`, `voto`, `nome`, come preferiamo.
+- Il nome della variabile è libero: possiamo usare `x`, `voto`, `nome`.
 
 ---
 
@@ -195,7 +194,8 @@ print("Trovato:", cercato in lista)
 `x in sequenza` restituisce:
 
 - `True` se `x` compare almeno una volta nella sequenza;
-- `False` altrimenti.
+- `False` altrimenti;
+- funziona anche sulle stringhe: `"a" in "casa"` vale `True`.
 
 Esiste anche la forma negata:
 
@@ -203,8 +203,6 @@ Esiste anche la forma negata:
 if cercato not in lista:
     print("Non c'è")
 ```
-
-> **N.B.** `in` funziona anche sulle stringhe: `"a" in "casa"` vale `True`.
 
 ---
 
@@ -383,9 +381,7 @@ Perché serve l'indice:
 - poi il secondo con il penultimo;
 - e così via.
 
-Con `for c in s` avremmo solo un carattere alla volta, senza il suo "specchio" dall'altra parte.
-
-> **Tra poco** vedremo che lo slicing permette di scrivere questo controllo in una riga.
+Con `for c in s` avremmo solo un carattere alla volta, senza il suo "specchio" dall'altra parte; più avanti lo slicing renderà questo controllo una riga.
 
 ---
 layout: two-cols-header

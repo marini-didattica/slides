@@ -51,9 +51,7 @@ for i, nome in enumerate(nomi):
 La riga `for i, nome in ...` **spacchetta** la coppia in due variabili:
 
 - `i` riceve l'indice;
-- `nome` riceve il valore.
-
-> **N.B.** I nomi delle variabili sono liberi: `for posizione, valore in enumerate(lista)` va benissimo.
+- `nome` riceve il valore: i nomi delle variabili sono liberi.
 
 ---
 
@@ -154,7 +152,7 @@ print(indice_massimo)   # 1
 
 Con `enumerate` la condizione usa direttamente `voto`, mentre l'aggiornamento usa `i`: non dobbiamo più scrivere `voti[i]` per leggere il valore.
 
-> **N.B.** Se ci sono più massimi uguali, questo codice restituisce la **prima** posizione, perché aggiorna solo con `>`.
+> **N.B.** Con più massimi uguali restituisce la **prima** posizione (aggiorna solo con `>`).
 
 ---
 
@@ -253,7 +251,23 @@ if trovato == False:
 - `enumerate` fornisce l'indice senza doverlo gestire a mano.
 - La variabile `trovato` distingue "trovato" da "finito il ciclo senza trovarlo".
 
-> **N.B.** Anche le stringhe si possono enumerare: `for i, c in enumerate("ciao")` dà `(0, "c")`, `(1, "i")`, ...
+---
+
+# Bonus — enumerare una stringa
+
+Anche una stringa è una sequenza: `enumerate` funziona allo stesso modo.
+
+```python
+for i, c in enumerate("ciao"):
+    print(i, c)
+```
+
+```text
+0 c
+1 i
+2 a
+3 o
+```
 
 ---
 
