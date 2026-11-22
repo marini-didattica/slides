@@ -10,9 +10,10 @@ merged here and no longer deploy.
 |---|---|---|
 | Prime | Introduzione python | `src/prime/1-introduzione-python/0-main.md` |
 | Prime | Esercizi python | `src/prime/2-esercizi-python/0-main.md` |
+| Prime | Python idiomatico | `src/prime/3-python-idiomatico/0-main.md` |
 | Seconde | Ripasso Python | `src/seconde/1-introduzione-python/0-main.md` |
 | Seconde | Esercizi Python | `src/seconde/2-esercizi-python/0-main.md` |
-| Seconde | Scrivere Python in modo ergonomico | `src/seconde/3-python-ergonomico/0-main.md` |
+| Seconde | Python idiomatico | `src/seconde/3-python-idiomatico/0-main.md` |
 | Olimpiadi | Programmazione dinamica | `src/olimpiadi/1-programmazione-dinamica/0-main.md` |
 | Olimpiadi | Soluzioni problemi OII | `src/olimpiadi/2-soluzioni-problemi-oii/0-main.md` |
 | Extra | Uso vscode.dev | `src/extra/vscode-web/0-main.md` |

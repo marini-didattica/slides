@@ -89,17 +89,17 @@ Stampa i nomi con la loro posizione, partendo da `1` invece che da `0`.
 | ---------------------- | -------------------------- |
 | `["Ada", "Luca", "Sara"]` | `1 Ada`<br>`2 Luca`<br>`3 Sara` |
 
-> **Nota** Nella versione non ergonomica si aggiunge `1` all'indice dentro il `print`.
+> **Nota** Nella versione non idiomatica si aggiunge `1` all'indice dentro il `print`.
 
 ---
 layout: two-cols-header
 ---
 
-# Stampa numerata — non ergonomico vs ergonomico
+# Stampa numerata — non idiomatico vs idiomatico
 
 ::left::
 
-### Non ergonomico
+### Non idiomatico
 
 ```python
 nomi = ["Ada", "Luca", "Sara"]
@@ -110,7 +110,7 @@ for i in range(len(nomi)):
 
 ::right::
 
-### Ergonomico
+### Idiomatico
 
 ```python
 nomi = ["Ada", "Luca", "Sara"]

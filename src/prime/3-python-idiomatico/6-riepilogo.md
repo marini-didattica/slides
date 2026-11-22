@@ -15,7 +15,7 @@ class: table-sm
 
 # Prima e dopo
 
-| Problema | Soluzione non ergonomica | Soluzione ergonomica |
+| Problema | Soluzione non idiomatica | Soluzione idiomatica |
 | -------- | ------------------------ | -------------------- |
 | Un elemento è presente? | ciclo + variabile `trovato` | `x in lista` |
 | Somma / media | ciclo + accumulatore | `sum(lista)` / `len(lista)` |
@@ -56,7 +56,7 @@ Devo costruire una frase con dei valori?
 
 # Il codice resta vostro
 
-Le soluzioni ergonomiche non sono "trucchi" per evitare la fatica: sono il vocabolario di Python.
+Le soluzioni idiomatiche non sono "trucchi" per evitare la fatica: sono il vocabolario di Python.
 
 - Scrivere `for x in lista` significa *"per ogni elemento"*.
 - Scrivere `enumerate` significa *"mi servono posizione e valore"*.
@@ -77,4 +77,4 @@ Più il codice assomiglia all'enunciato, meno errori contiene e più facile è r
 7. Controlla se una stringa è palindroma usando `[::-1]`.
 8. Estrai da una lista gli elementi in posizione pari e quelli in posizione dispari con lo slicing.
 
-> **Consiglio** Per ogni esercizio confrontate la versione con gli strumenti di base e quella ergonomica: è il modo migliore per capire **perché** la seconda è preferibile.
+> **Consiglio** Per ogni esercizio confrontate la versione con gli strumenti di base e quella idiomatica: è il modo migliore per capire **perché** la seconda è preferibile.

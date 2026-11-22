@@ -2,8 +2,8 @@
 layout: cover
 ---
 
-# `sorted`, `min`, `max`
-Ordinare e cercare senza riscrivere algoritmi
+# `sum`, `sorted`, `min`, `max`
+Sommare, ordinare e cercare senza riscrivere algoritmi
 
 <div class="pt-12">
   <span class="px-2 py-1 rounded bg-primary text-[#141418]">Marini Mattia - Informatica</span>
@@ -28,7 +28,77 @@ Non sono "scorciatoie da evitare": sono il modo normale di scrivere questi progr
 
 ---
 
-# Esercizio 8 — Massimo e minimo
+# La funzione `sum`
+
+`sum(sequenza)` restituisce la **somma** di tutti gli elementi:
+
+```python
+voti = [7, 4, 9, 6]
+
+print(sum(voti))   # 26
+```
+
+- Funziona su liste e su qualsiasi sequenza di numeri.
+- Su una lista vuota restituisce `0`, non dà errore.
+- Accetta un secondo argomento opzionale: il valore iniziale.
+
+```python
+print(sum([1, 2, 3], 10))   # 16
+```
+
+> **N.B.** `sum()` non è una scorciatoia "per furbi": è il modo normale di sommare una sequenza in Python.
+
+---
+layout: two-cols-header
+---
+
+# Somma — non idiomatico vs idiomatico
+
+::left::
+
+### Non idiomatico
+
+```python
+voti = [7, 4, 9, 6]
+
+somma = 0
+for voto in voti:
+    somma = somma + voto
+
+print(somma)   # 26
+```
+
+::right::
+
+### Idiomatico
+
+```python
+voti = [7, 4, 9, 6]
+
+print(sum(voti))   # 26
+```
+
+::bottom::
+L'accumulatore sparisce: `sum` fa esattamente ciò che il nome promette.
+
+---
+
+# Somma e media
+
+La media è la somma divisa per il numero di elementi:
+
+```python
+voti = [7, 4, 9, 6]
+
+media = sum(voti) / len(voti)
+print(media)   # 6.5
+```
+
+> **N.B.** Con una lista vuota `len(voti)` vale `0` e la divisione dà errore: se la lista può essere vuota, controllala prima.
+
+---
+
+# Esercizio 9 — Massimo e minimo
 
 Riprendiamo l'esercizio del massimo e del minimo.
 
@@ -36,17 +106,17 @@ Riprendiamo l'esercizio del massimo e del minimo.
 | ----------------- | --------------- |
 | `[3, 7, 2, 9, 5]` | `massimo: 9`<br>`minimo: 2` |
 
-Nella versione non ergonomica partivamo dal primo elemento e aggiornavamo due accumulatori durante il ciclo.
+Nella versione non idiomatica partivamo dal primo elemento e aggiornavamo due accumulatori durante il ciclo.
 
 ---
 layout: two-cols-header
 ---
 
-# Massimo e minimo — non ergonomico vs ergonomico
+# Massimo e minimo — non idiomatico vs idiomatico
 
 ::left::
 
-### Non ergonomico
+### Non idiomatico
 
 ```python
 lista = [3, 7, 2, 9, 5]
@@ -66,7 +136,7 @@ print("minimo:", minimo)
 
 ::right::
 
-### Ergonomico
+### Idiomatico
 
 ```python
 lista = [3, 7, 2, 9, 5]
@@ -156,7 +226,7 @@ print(voti)                         # [9, 8, 7, 6]
 
 ---
 
-# Esercizio 16 — Ordinare una lista
+# Ordinare una lista
 
 Riprendiamo l'esercizio dell'ordinamento: data una lista, mettila in ordine crescente.
 
@@ -164,7 +234,7 @@ Riprendiamo l'esercizio dell'ordinamento: data una lista, mettila in ordine cres
 | ----------------- | ----------------- |
 | `[5, 3, 8, 1, 9]` | `[1, 3, 5, 8, 9]` |
 
-Nella versione non ergonomica avevamo scritto un **selection sort** con due cicli annidati e lo scambio con variabile temporanea.
+Nella versione non idiomatica avevamo scritto un **selection sort** con due cicli annidati e lo scambio con variabile temporanea.
 
 ---
 layout: two-cols-header
@@ -174,7 +244,7 @@ layout: two-cols-header
 
 ::left::
 
-### Non ergonomico
+### Non idiomatico
 
 ```python
 lista = [5, 3, 8, 1, 9]
@@ -193,7 +263,7 @@ print(lista)   # [1, 3, 5, 8, 9]
 
 ::right::
 
-### Ergonomico
+### Idiomatico
 
 ```python
 lista = [5, 3, 8, 1, 9]
@@ -300,4 +370,3 @@ print(sorted(voti, key=lambda voto: voto[1]))
 - `key=...` ordina o seleziona secondo un criterio.
 - `max()` / `min()` su una lista vuota danno errore.
 
-> **N.B.** Se il problema è "trova il più grande", "ordina", "somma", quasi sempre esiste già una funzione integrata: usarla rende il codice più corto e meno soggetto a errori.

@@ -42,7 +42,7 @@ layout: two-cols-header
 
 ::left::
 
-### Non ergonomico
+### Non idiomatico
 
 ```python
 v = [10, 20, 30, 40, 50]
@@ -54,7 +54,7 @@ print(v[len(v) - 3])   # 30
 
 ::right::
 
-### Ergonomico
+### Idiomatico
 
 ```python
 v = [10, 20, 30, 40, 50]
@@ -121,17 +121,17 @@ Estrarre i primi tre e gli ultimi tre elementi di una lista.
 | --------------------- | ----------------------------- |
 | `[10, 20, 30, 40, 50, 60]` | `[10, 20, 30]` e `[40, 50, 60]` |
 
-La versione non ergonomica usa un ciclo con `range()` e `.append()` per costruire le due liste.
+La versione non idiomatica usa un ciclo con `range()` e `.append()` per costruire le due liste.
 
 ---
 layout: two-cols-header
 ---
 
-# Primi e ultimi — non ergonomico vs ergonomico
+# Primi e ultimi — non idiomatico vs idiomatico
 
 ::left::
 
-### Non ergonomico
+### Non idiomatico
 
 ```python
 v = [10, 20, 30, 40, 50, 60]
@@ -150,7 +150,7 @@ print(ultimi)
 
 ::right::
 
-### Ergonomico
+### Idiomatico
 
 ```python
 v = [10, 20, 30, 40, 50, 60]
@@ -227,11 +227,11 @@ Nella lezione sul `for each` avevamo usato due indici per confrontare i caratter
 layout: two-cols-header
 ---
 
-# Palindroma — non ergonomico vs ergonomico
+# Palindroma — non idiomatico vs idiomatico
 
 ::left::
 
-### Non ergonomico
+### Non idiomatico
 
 ```python
 s = "anna"
@@ -246,7 +246,7 @@ print(palindroma)   # True
 
 ::right::
 
-### Ergonomico
+### Idiomatico
 
 ```python
 s = "anna"
@@ -294,7 +294,7 @@ print(v)           # [1, 2, 3]
 print(copia)       # [99, 2, 3]
 ```
 
-La versione non ergonomica crea una lista vuota e vi aggiunge gli elementi uno per uno con un ciclo.
+La versione non idiomatica crea una lista vuota e vi aggiunge gli elementi uno per uno con un ciclo.
 
 > **N.B.** `copia = v` **non** crea una copia: fa sì che due nomi puntino alla **stessa** lista. Per una copia vera serve `v[:]` (o `v.copy()`).
 
@@ -402,4 +402,4 @@ print(v[10:])    # []  -> nessun errore
 - Palindroma: `s == s[::-1]`.
 - Rotazione: `v[1:] + v[:1]` a sinistra, `v[-1:] + v[:-1]` a destra.
 
-> **N.B.** Lo slicing è la sintassi ergonomica per "prendi questa parte di sequenza". Se vi trovate a copiare elementi con un ciclo e un indice, chiedetevi se uno slice non faccia la stessa cosa in una riga.
+> **N.B.** Lo slicing è la sintassi idiomatica per "prendi questa parte di sequenza". Se vi trovate a copiare elementi con un ciclo e un indice, chiedetevi se uno slice non faccia la stessa cosa in una riga.

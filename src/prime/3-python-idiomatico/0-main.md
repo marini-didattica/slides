@@ -2,7 +2,7 @@
 theme: marini-slidev-theme
 addons:
   - marini-slidev-addons
-title: Scrivere Python in modo ergonomico
+title: Python idiomatico
 author: Marini Mattia
 info: |
   Marini Mattia - a.s. 2026/2027

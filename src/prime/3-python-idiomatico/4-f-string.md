@@ -25,10 +25,10 @@ print("Ciao " + nome + ", hai " + eta + " anni.")
 # TypeError: can only concatenate str (not "int") to str
 ```
 
-La versione non ergonomica converte ogni valore con `str()` e concatena tutto con `+`.
+La versione non idiomatica converte ogni valore con `str()` e concatena tutto con `+`.
 ---
 
-# Soluzione non ergonomica
+# Soluzione non idiomatica
 
 ```python
 nome = "Ada"
@@ -45,7 +45,7 @@ Funziona, ma:
 - è facile dimenticare uno spazio.
 ---
 
-# Soluzione ergonomica: f-string
+# Soluzione idiomatica: f-string
 
 Una **f-string** è una stringa preceduta da `f`. Dentro le graffe `{...}` si possono mettere variabili ed espressioni:
 
@@ -101,7 +101,7 @@ Stampare la media con **esattamente due cifre decimali**.
 | -------------- | -------------- |
 | `[7, 4, 9, 6]` | `Media: 6.50`  |
 
-La versione non ergonomica usa `round()` e `str()`:
+La versione non idiomatica usa `round()` e `str()`:
 
 ```python
 media = sum(voti) / len(voti)
@@ -171,7 +171,7 @@ Luca          6
 Sara          9
 ```
 
-La versione non ergonomica aggiunge spazi a mano, contando i caratteri di ogni nome.
+La versione non idiomatica aggiunge spazi a mano, contando i caratteri di ogni nome.
 ---
 
 # Allineamento e larghezza

@@ -2,7 +2,7 @@
 layout: cover
 ---
 
-# Scrivere Python in modo ergonomico
+# Python idiomatico
 Il `for each`
 
 <div class="pt-12">
@@ -22,7 +22,7 @@ Negli esercizi precedenti avevamo delle regole volutamente povere:
 
 Quelle regole servivano per allenare la logica. Ora che la logica c'è, possiamo imparare a scrivere lo **stesso programma** in modo più corto, leggibile e meno soggetto a errori.
 
-> **Idea della lezione** A ogni problema affianchiamo la soluzione "non ergonomica" che conosciamo già e una soluzione "ergonomica" con la sintassi nuova.
+> **Idea della lezione** A ogni problema affianchiamo la soluzione "non idiomatica" che conosciamo già e una soluzione "idiomatica" con la sintassi nuova.
 
 ---
 
@@ -95,11 +95,11 @@ Riprendiamo l'esercizio della ricerca: controlla se il numero `15` è presente n
 | `[4, 8, 15, 16, 23, 42]` | `Trovato: True`  |
 | `[1, 2, 3]`              | `Trovato: False` |
 
-> **Nota** Nella versione non ergonomica dobbiamo scorrere la lista e mantenere una variabile `trovato`.
+> **Nota** Nella versione non idiomatica dobbiamo scorrere la lista e mantenere una variabile `trovato`.
 
 ---
 
-# Soluzione non ergonomica
+# Soluzione non idiomatica
 
 ```python
 lista = [4, 8, 15, 16, 23, 42]
@@ -119,7 +119,7 @@ Stiamo gestendo **a mano** tre cose: l'indice, la condizione di stop e la variab
 
 ---
 
-# Soluzione ergonomica: l'operatore `in`
+# Soluzione idiomatica: l'operatore `in`
 
 ```python
 lista = [4, 8, 15, 16, 23, 42]
@@ -152,17 +152,17 @@ Data una lista di voti, calcola la media.
 | ---------------- | ------ |
 | `[7, 4, 9, 6]`   | `6.5`  |
 
-Nella versione non ergonomica sommiamo gli elementi con l'indice e poi dividiamo per `len(voti)`.
+Nella versione non idiomatica sommiamo gli elementi con l'indice e poi dividiamo per `len(voti)`.
 
 ---
 layout: two-cols-header
 ---
 
-# Media — non ergonomico vs ergonomico
+# Media — non idiomatico vs idiomatico
 
 ::left::
 
-### Non ergonomico
+### Non idiomatico
 
 ```python
 voti = [7, 4, 9, 6]
@@ -177,7 +177,7 @@ print(media)
 
 ::right::
 
-### Ergonomico
+### Idiomatico
 
 ```python
 voti = [7, 4, 9, 6]
@@ -221,7 +221,7 @@ Trovare il valore più grande e il più piccolo di una lista.
 | ----------------- | --------------- |
 | `[3, 7, 2, 9, 5]` | `massimo: 9`<br>`minimo: 2` |
 
-Nella versione non ergonomica partiamo dal primo elemento e aggiorniamo il massimo (e il minimo) durante il ciclo.
+Nella versione non idiomatica partiamo dal primo elemento e aggiorniamo il massimo (e il minimo) durante il ciclo.
 
 ---
 layout: two-cols-header
@@ -231,7 +231,7 @@ layout: two-cols-header
 
 ::left::
 
-### Non ergonomico
+### Non idiomatico
 
 ```python
 lista = [3, 7, 2, 9, 5]
@@ -246,7 +246,7 @@ print(massimo)
 
 ::right::
 
-### Ergonomico
+### Idiomatico
 
 ```python
 lista = [3, 7, 2, 9, 5]
@@ -384,4 +384,4 @@ Con il `for each` si può fare tenendo da parte il valore precedente in una vari
   - confrontare elementi vicini;
   - accedere a posizioni speculari (palindroma, inversione).
 
-> **N.B.** "Ergonomico" non significa "sempre più corto": significa usare la sintassi che descrive meglio l'operazione.
+> **N.B.** "Idiomatico" non significa "sempre più corto": significa usare la sintassi che descrive meglio l'operazione.
