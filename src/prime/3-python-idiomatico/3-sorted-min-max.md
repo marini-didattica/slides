@@ -356,7 +356,7 @@ print(sorted(voti, key=lambda voto: voto[1]))
 
 ---
 
-# Riepilogo — `sorted`, `min`, `max`
+# Riepilogo — `sum`, `sorted`, `min`, `max`
 
 | Funzione | Restituisce | Modifica l'originale? |
 | -------- | ----------- | --------------------- |
@@ -368,5 +368,6 @@ print(sorted(voti, key=lambda voto: voto[1]))
 
 - `reverse=True` ordina al contrario.
 - `key=...` ordina o seleziona secondo un criterio.
+- `sum()` su una lista vuota restituisce `0`.
 - `max()` / `min()` su una lista vuota danno errore.
 
