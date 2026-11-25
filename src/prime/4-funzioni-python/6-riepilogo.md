@@ -10,6 +10,8 @@ Dalle ripetizioni alle funzioni
 </div>
 
 ---
+class: table-sm
+---
 
 # La sintassi in un colpo d'occhio
 
@@ -45,6 +47,8 @@ valore = nome_funzione(3, 5)
 - Senza `return`, il risultato è `None`.
 - `print` mostra; `return` consegna.
 
+---
+class: table-sm
 ---
 
 # Errori comuni

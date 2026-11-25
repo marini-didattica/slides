@@ -89,6 +89,8 @@ Una funzione si comporta come una **scatola**:
 Chi usa la funzione non deve sapere **come** funziona dentro: gli basta sapere **cosa entra** e **cosa esce**.
 
 ---
+class: table-sm
+---
 
 # Funzioni che usiamo già
 

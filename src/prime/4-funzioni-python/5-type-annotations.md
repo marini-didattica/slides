@@ -31,6 +31,8 @@ def saluta(nome: str) -> str:
 Senza leggere il corpo, sappiamo già che input e output sono stringhe.
 
 ---
+class: table-sm
+---
 
 # I tipi più comuni
 
@@ -48,6 +50,8 @@ Senza leggere il corpo, sappiamo già che input e output sono stringhe.
 
 > **N.B.** `list[int]` richiede Python 3.9 o successivo. Nei corsi usiamo versioni recenti.
 
+---
+class: table-sm
 ---
 
 # Esempi annotati
@@ -143,11 +147,6 @@ print(doppio("ab"))   # abab
 L'ultima chiamata non dà errore: `"ab" * 2` è semplicemente `"abab"`.
 
 - le annotazioni sono **promesse**, non vincoli;
-- chi sbaglia tipo non viene fermato da Python;
-- per controllarle davvero si usa uno strumento esterno, ad esempio:
-
-```bash
-mypy programma.py
-```
+- per controllarle davvero si usa uno strumento esterno, ad esempio `mypy programma.py`.
 
 > **N.B.** Anche senza controlli automatici, le annotazioni rendono il codice più leggibile per noi e per i nostri compagni.

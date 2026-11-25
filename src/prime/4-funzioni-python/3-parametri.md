@@ -1,6 +1,6 @@
 # Parametri: dare input alla funzione
 
-Una funzione senza input fa sempre la stessa cosa. Per renderla flessibile usiamo i **parametri**:
+Una funzione senza input fa sempre lo stesso lavoro: aggiungiamo i **parametri**:
 
 ```python
 def saluta(nome):
@@ -65,7 +65,6 @@ Mi chiamo Ada e ho 17 anni
 - con un numero diverso di argomenti Python segnala un errore.
 
 ---
-
 layout: two-cols-header
 ---
 
@@ -152,11 +151,10 @@ Buongiorno Ada
 
 Vantaggi:
 
-- il codice si legge meglio;
-- l'ordine non conta più;
+- il codice si legge meglio e l'ordine non conta più;
 - possiamo saltare un parametro con default.
 
-> **N.B.** Non si possono mettere argomenti posizionali **dopo** quelli per nome: `saluta(nome="Ada", "Ciao")` è un errore.
+> **N.B.** `saluta(nome="Ada", "Ciao")` è un errore: i posizionali vanno prima.
 
 ---
 

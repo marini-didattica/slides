@@ -19,7 +19,6 @@ print(somma(2, 3))    # equivale a print(5)
 > **N.B.** `return` è l'**output** del nostro modello input → funzione → output.
 
 ---
-
 layout: two-cols-header
 ---
 
@@ -154,15 +153,9 @@ def prezzo(area, prezzo_mq):
 def main():
     a = area_rettangolo(3, 4)
     costo = prezzo(a, 10)
-    print("Costo:", costo)
+    print("Costo:", costo)    # Costo: 120
 
 main()
-```
-
-Output:
-
-```text
-Costo: 120
 ```
 
 - ogni funzione risolve **un solo** problema;

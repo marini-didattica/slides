@@ -64,7 +64,7 @@ print("Questa riga è fuori dalla funzione")
 - l'indentazione standard è di **4 spazi**;
 - righe vuote e commenti non interrompono il blocco.
 
-> **N.B.** In Python l'indentazione non è stile: è **sintassi**. Uno spazio di troppo cambia il significato del programma.
+> **N.B.** In Python l'indentazione non è stile, è **sintassi**: uno spazio cambia il significato.
 
 ---
 
@@ -111,6 +111,8 @@ main()
 
 > **N.B.** In Python l'ordine conta: una chiamata prima della `def` produce `NameError`.
 
+---
+class: table-sm
 ---
 
 # Scegliere il nome giusto
