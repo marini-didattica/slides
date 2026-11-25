@@ -36,7 +36,7 @@ Un intero: il valore $G_N \bmod M$.
 
 ::bottom::
 
-> **Altri esempi** — `3 1000 → 3` (infatti $G_2 = 1$ e $G_3 = (1)\,(1-0) + 1 = 3$); `5 9 → 6` (infatti $G_5 = 33$ e $33 \bmod 9 = 6$).
+> **Altri esempi** — `3 1000 → 3` (infatti $G_2 = 1$ e $G_3 = (1-0)\cdot 2 + 1 = 3$); `5 9 → 6` (infatti $G_5 = 33$ e $33 \bmod 9 = 6$).
 
 ---
 layout: default

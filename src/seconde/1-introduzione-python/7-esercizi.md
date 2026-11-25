@@ -646,7 +646,7 @@ class: table-sm
 
 # Esercizio 18 — Elementi in comune v1
 <div class="text-[var(--c-text-muted)]">
-Versione 2: liste NON ordinate
+Versione 1: liste NON ordinate
 </div>
 
 Date due liste, crea una terza lista con solo gli elementi presenti in **entrambe**.
@@ -729,7 +729,7 @@ class: table-sm
 
 # Esercizio 20 — Selection sort in una funzione
 
-Scrivi un algoritmo che ordini una **lista di interi** in ordine crescente con il noto algoritmo [selection sort](https://it.wikipedia.org/wiki/Selection_sort); a ogni passo cerca il minimo della parte non ordinata e lo scambia con il primo elemento di quella parte.
+Scrivi una funzione `ordina(lista)` che ordini una **lista di interi** in ordine crescente con il noto algoritmo [selection sort](https://it.wikipedia.org/wiki/Selection_sort); a ogni passo cerca il minimo della parte non ordinata e lo scambia con il primo elemento di quella parte.
 
 
 | Input             | Output            |

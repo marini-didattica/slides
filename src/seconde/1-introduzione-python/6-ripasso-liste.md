@@ -25,7 +25,7 @@ v = [10, 20, 30]
 - Gli indici partono da `0`
 - È **mutabile**: si possono cambiare, aggiungere e togliere elementi
 
-> **N.B.** L'essere contigue in memoria è ciò che rende possibile accedere a un elemento "salto" tramite il suo indice.
+> **N.B.** L'essere contigui in memoria è ciò che rende possibile accedere direttamente a un elemento tramite il suo indice.
 
 ---
 

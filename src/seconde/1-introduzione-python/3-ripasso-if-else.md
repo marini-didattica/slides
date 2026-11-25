@@ -192,7 +192,7 @@ else:
 layout: two-cols-header
 ---
 
-# Esempio — if annidiato
+# Esempio — if annidato
 
 ::left::
 

@@ -1,6 +1,10 @@
+---
+class: text-sm
+---
+
 # Consigli per affrontare un problema
  
-<div class="flex flex-col gap-4 mt-5">
+<div class="flex flex-col gap-3 mt-3">
   <div class="box flex items-start gap-4">
     <span class="shrink-0 w-8 h-8 rounded-full bg-primary text-[#141418] font-bold flex items-center justify-center">1</span>
     <div>
@@ -21,4 +25,4 @@
   </div>
 </div>
 
-<!-- > **In sintesi** — se sai rispondere a queste tre domande, la ricorrenza è già scritta. -->
+> **In sintesi** — se sai rispondere a queste tre domande, la ricorrenza è già scritta.

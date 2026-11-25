@@ -20,7 +20,7 @@ Sulla prima riga `N K`; seguono gli $N-1$ archi, ciascuno dato da due nodi.
 
 Esempio ($N = 11$, $K = 2$):
 
-`0 3 · 1 2 · 0 4 · 0 1 · 2 6 · 4 5 · 5 7 · 2 8 · 8 9 · 8 10`
+`0 3 · 1 2 · 0 4 · 0 1 · 2 6 ·`<br>`4 5 · 5 7 · 2 8 · 8 9 · 8 10`
 
 ::right::
 

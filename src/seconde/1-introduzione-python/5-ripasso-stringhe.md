@@ -25,7 +25,7 @@ s = "Python"
 - Gli indici partono da `0`
 - Le stringhe sono **immutabili**: non si può cambiare un carattere, se ne crea una nuova
 
-> **N.B.** L'essere contigue in memoria è ciò che rende possibile accedere a un carattere "salto" tramite il suo indice.
+> **N.B.** L'essere contigui in memoria è ciò che rende possibile accedere direttamente a un carattere tramite il suo indice.
 
 ---
 

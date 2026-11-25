@@ -502,7 +502,7 @@ Y = 0.2126 * R + 0.7152 * G + 0.0722 * B
 - `Y` è un numero tra `0` (nero) e `1` (bianco).
 
 ```python
-# questo valore indica quanto è "scuro" un pixel
+# luminanza: 0 = nero, 1 = bianco
 luminanza = 0.2126 * r + 0.7152 * g + 0.0722 * b
 ```
 
@@ -525,16 +525,16 @@ max_pval = int(parts[3])
 pixels = parts[4:]
 
 ascii_shade = [
-    " ",
-    ".",
-    ":",
-    "-",
-    "=",
-    "+",
-    "*",
-    "%",
-    "@",
     "#",
+    "@",
+    "%",
+    "*",
+    "+",
+    "=",
+    "-",
+    ":",
+    ".",
+    " ",
 ]
 
 
@@ -599,16 +599,16 @@ La **scala di caratteri**, dal più scuro al più chiaro:
 
 ```python
 ascii_shade = [
-    " ",
-    ".",
-    ":",
-    "-",
-    "=",
-    "+",
-    "*",
-    "%",
-    "@",
     "#",
+    "@",
+    "%",
+    "*",
+    "+",
+    "=",
+    "-",
+    ":",
+    ".",
+    " ",
 ]
 ```
 

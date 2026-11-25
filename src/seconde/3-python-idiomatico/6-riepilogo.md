@@ -67,7 +67,7 @@ Più il codice assomiglia all'enunciato, meno errori contiene e più facile è r
 2. Data una lista di nomi, stampali numerati da `1` con `enumerate`.
 3. Trova la **posizione** del voto minimo con `enumerate`.
 4. Data una lista, crea una nuova lista con gli elementi in ordine **decrescente** usando `sorted`.
-5. Data una frase, stampa il numero di parole e la parola più lunga usando `split`, `len` e `max(key=len)`.
+5. Data una frase, stampa il numero di parole e la parola più lunga usando `split`, `len` e `max(parole, key=len)`.
 6. Stampa una tabella con nome, voto e media formattata a due decimali con le f-string.
 7. Controlla se una stringa è palindroma usando `[::-1]`.
 8. Estrai da una lista gli elementi in posizione pari e quelli in posizione dispari con lo slicing.

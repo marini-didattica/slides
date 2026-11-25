@@ -26,7 +26,7 @@ Python mette a disposizione alcune funzioni già pronte per i problemi più comu
 
 Non sono "scorciatoie da evitare": sono il modo normale di scrivere questi programmi in Python.
 
-> **N.B.** Sono funzioni **pure** (tranne `sort()`): non modificano la sequenza originale, restituiscono un nuovo valore.
+> **N.B.** Sono funzioni **pure**: non modificano la sequenza originale e restituiscono un nuovo valore. `sort()` invece è un metodo e modifica la lista sul posto.
 
 ---
 

@@ -8,7 +8,7 @@ La dp funziona quando il problema ha tutte e tre queste proprietà. Ognuna rispo
 | **Sottostruttura ottimale** | La soluzione ottima si costruisce da soluzioni ottime più piccole? |
 | **Memoizzazione** | Come conservo i risultati e li riuso? |
 
-> **In sintesi** — un problema di DP può essere scomposto in sottoproblemi più piccoli, i cui risultati possono essere salvati e riutilizzati per costrutire la soluzione globale.
+> **In sintesi** — un problema di DP può essere scomposto in sottoproblemi più piccoli, i cui risultati possono essere salvati e riutilizzati per costruire la soluzione globale.
 
 ---
 
@@ -88,18 +88,15 @@ I nodi colorati calcolano lo stesso valore: $F_3$ e $F_2$ compaiono già due vol
 # Sottostruttura ottimale
 
 
-Un problema ha **sottostruttura ottimale** quando la soluzione ottima si ottiene combinando soluzioni ottime dei suoi sottoproblemi. Supponiamo ad esempio di voler impilare $n$ scatoloni, ciascuno con dimensioni $a,b,c$:
-
-- **Sottoproblema** $x$: calcolo l'altezza massima che posso ottenere con $x$ scatole
-- **Sottostruttura ottimale**: se so l'altezza massima che posso ottenere con le prime $x$ scatole, allora posso calcolare quella ottenibile con le prime $x+1$
+Un problema ha **sottostruttura ottimale** quando la soluzione ottima si ottiene combinando soluzioni ottime dei suoi sottoproblemi. Ad esempio, in una griglia di costi vogliamo il costo minimo per raggiungere una cella partendo dall'angolo in alto a sinistra:
 
 $$
-S_{x+1} = \operatorname{max}(s_a, s_b, s_c) + S_{x}
+D[i][j] = C[i][j] + \min(D[i-1][j],\; D[i][j-1])
 $$
 
-<!-- La parte più complessa sta nel capire come sfruttare le soluzioni precedenti per calcolare quella corrente -->
+$C[i][j]$ è il costo della cella, $D[i][j]$ il costo minimo per raggiungerla. Il valore di $D[i][j]$ dipende solo da due soluzioni ottime già calcolate: quella della cella sopra e quella della cella a sinistra.
 
-> **Attenzione** - la difficoltà sta nel capire **come** combinare le soluzioni che abbiamo già calcolato per sintetizzare quella corrente
+> **Attenzione** — la difficoltà sta nel capire **come** combinare le soluzioni che abbiamo già calcolato per sintetizzare quella corrente
 
 ---
 layout: two-cols-header

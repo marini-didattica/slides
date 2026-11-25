@@ -56,10 +56,8 @@ print(x)
 > **N.B.** Una variabile deve essere inizializzata prima di essere utilizzata, altrimenti ci sarà un'errore!
 
 ```python
-x = 2       # Inizializzazione; il programma incontra per la prima volta la variabile x, per questo la inizializza
-print(x)
-x = 13      # Assegnamento; il programma incontra per la seconda volta la variabile x, per questo la aggiorna
-print(x)
+print(x)    # NameError: x non è ancora definita
+x = 2       # la variabile viene creata solo qui
 ```
 
 ---
@@ -76,7 +74,7 @@ my_var = 42
 
 </div>
 
-L'inizializzazione avviene solo la **prima** volta che si incontra una variabile. L' istruzione si comporta in maniera diversa, a seconda che sia una inizializzazione o un assegnamento
+L'inizializzazione avviene solo la **prima** volta che si incontra una variabile. L'istruzione si comporta in modo diverso a seconda che sia un'inizializzazione o un assegnamento.
 
 
 
@@ -85,7 +83,7 @@ L'inizializzazione avviene solo la **prima** volta che si incontra una variabile
 Intuitivamente avviene questo
 
 - Cerco posto per variabile in memoria
-- Lo "etichetto" con `my_var`
+- Lo etichetto con `my_var`
 - Ci inserisco il valore specificato
 
 
@@ -94,7 +92,7 @@ Intuitivamente avviene questo
 Intuitivamente avviene questo
 
 - Cerco memoria etichettata da `my_var`
-- Una volta trovato lo "etichetto"
+- Una volta trovata l'**etichetta**
 - Ci inserisco il valore specificato
 
 ---

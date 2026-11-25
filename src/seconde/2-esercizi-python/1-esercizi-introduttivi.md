@@ -80,7 +80,7 @@ print("minimo =", minimo)
 
 <ListTracker
   :items="[4, 2, 9, 1, 7]"
-  :trackers="{ i: { 2: 0, 5: 1, 8: 2, 11: 3, 14: 4, 17: 5 } }"
+  :trackers="{ i: { 2: 0, 5: 1, 8: 2, 11: 3, 14: 4, 17: 4 } }"
   highlight
 />
 
@@ -101,8 +101,7 @@ print("minimo =", minimo)
           <template #5-8>i = 1</template>
           <template #8-11>i = 2</template>
           <template #11-14>i = 3</template>
-          <template #14-17>i = 4</template>
-          <template #17-20>i = 5</template>
+          <template #14-20>i = 4</template>
         </v-switch>
       </td>
       <td>
@@ -297,7 +296,7 @@ print("indice =", indice)
 
 <ListTracker
   :items="[4, 2, 9, 1]"
-  :trackers="{ i: { 2: 0, 4: 1, 6: 2, 8: 3, 10: 4 } }"
+  :trackers="{ i: { 2: 0, 4: 1, 6: 2, 8: 3, 10: 3 } }"
   highlight
 />
 
@@ -316,8 +315,7 @@ print("indice =", indice)
           <template #2-4>i = 0</template>
           <template #4-6>i = 1</template>
           <template #6-8>i = 2</template>
-          <template #8-10>i = 3</template>
-          <template #10-12>i = 4</template>
+          <template #8-12>i = 3</template>
         </v-switch>
       </td>
       <td>
@@ -1323,7 +1321,7 @@ class: table-sm
 
 <span class="px-2 py-1 rounded bg-primary text-[#141418]">Soluzione</span> Per ogni lettera della prima stringa si conta quante volte compare in ciascuna delle due.
 
-```python {maxHeight:'80%'}
+```python {maxHeight:'56vh'}
 parola_A = "roma"
 parola_B = "amor"
 
@@ -1349,7 +1347,7 @@ else:
     print("non anagrammi")
 ```
 
-> **Nota** Se sono anagrammi, ogni lettera deve comparire lo stesso numero di volte nelle due stringhe. Il controllo di lunghezza esclude subito i casi impossibili.
+> **Suggerimento** Il blocco è scorrevole: usa la rotella del mouse. Se sono anagrammi, ogni lettera deve comparire lo stesso numero di volte nelle due stringhe; il controllo di lunghezza esclude subito i casi impossibili.
 
 ---
 layout: two-cols-header
@@ -1404,8 +1402,7 @@ else:
           <template #3-14>0</template>
           <template #14-25>1</template>
           <template #25-36>2</template>
-          <template #36-47>3</template>
-          <template #47-60>4</template>
+          <template #36-60>3</template>
         </v-switch>
       </td>
       <td>
@@ -1439,7 +1436,7 @@ else:
   <div class="min-w-0 flex-1">
     <ListTracker
       :items="['r', 'o', 'm', 'a']"
-      :trackers="{ i: { 3: 0, 14: 1, 25: 2, 36: 3, 47: 4 } }"
+      :trackers="{ i: { 3: 0, 14: 1, 25: 2, 36: 3, 47: 3 } }"
       highlight
     />
   </div>

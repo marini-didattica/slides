@@ -28,32 +28,27 @@ layout: center
   <span class="text-5xl px-2 py-1 rounded bg-primary text-[#141418]">vscode.dev</span>
 </div>
 
-> E' tassativo usare **google chrome**, altri browser potrebbero non funzionare!
+> È tassativo usare **google chrome**, altri browser potrebbero non funzionare!
 
 
 
 ---
-layout: image-right
-image: /vscode-web/01.png
+layout: two-cols-header
 ---
 
-# Installare le estensioni
+# Installare Pylance
+
+::left::
 
 Nella barra delle attività a sinistra clicca l'icona delle **estensioni** (il simbolo del pacco).
 
-Si apre il *Marketplace*: da qui installeremo gli strumenti che ci servono per programmare in Python.
+Nel *Marketplace* cerca **pylance** e clicca **Installa**.
 
+È l'estensione ufficiale di Microsoft per il supporto a Python (completamento, errori, suggerimenti).
 
----
-layout: image-right
-image: /vscode-web/01.png
----
+::right::
 
-# Cercare "Pylance"
-
-Nel campo di ricerca del Marketplace digita **pylance**.
-
-È l'estensione ufficiale di Microsoft per il supporto a Python (completamento, errori, suggerimenti). Clicca **Installa**.
+<img src="/vscode-web/01.png" class="shot max-h-96" alt="Marketplace di VS Code con la ricerca di Pylance e il pulsante Installa" />
 
 ---
 
@@ -66,15 +61,20 @@ Pylance, nella versione web, ha funzionalità limitate: l'analisi è ristretta a
 Clicca **Installa comunque** per proseguire.
 
 ---
-layout: image-right
-image: /vscode-web/03.png
+layout: two-cols-header
 ---
 
 # Cercare "Pyodide Runner"
 
+::left::
+
 Ora cerca **pyodide runner** e clicca **Installa**.
 
 Questa estensione permette di eseguire Python direttamente nel browser, senza installare nulla sul computer.
+
+::right::
+
+<img src="/vscode-web/03.png" class="shot max-h-96" alt="Marketplace di VS Code con la ricerca di Pyodide Runner" />
 
 ---
 
@@ -87,26 +87,36 @@ Pyodide Runner è pubblicata da un autore non verificato: VS Code mostra un avvi
 Clicca **Considera attendibile il server di pubblicazione e l'installazione** per autorizzare l'estensione.
 
 ---
-layout: image-right
-image: /vscode-web/05.png
+layout: two-cols-header
 ---
 
 # Aprire una cartella
+
+::left::
 
 Una cartella diventerà il vostro *workspace*, cioè lo spazio di lavoro in cui salverete i programmi.
 
 Clicca l'icona dell'**Explorer** (le pagine) nella barra laterale a sinistra.
 
+::right::
+
+<img src="/vscode-web/05.png" class="shot max-h-96" alt="Barra laterale di VS Code con l'icona Explorer evidenziata" />
+
 ---
-layout: image-right
-image: /vscode-web/06.png
+layout: two-cols-header
 ---
 
 # Apri cartella
 
+::left::
+
 Nella vista dell'Explorer clicca **Apri cartella**.
 
 Scegli una cartella sul tuo computer: il browser chiederà il permesso di accedervi.
+
+::right::
+
+<img src="/vscode-web/06.png" class="shot max-h-96" alt="Vista Explorer di VS Code con il pulsante Apri cartella" />
 
 ---
 
