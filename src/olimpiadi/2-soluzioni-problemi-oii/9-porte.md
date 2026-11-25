@@ -81,7 +81,6 @@ layout: default
 #define MOD 1000000007
 #define MAXN 400001
 int N, A[MAXN], dp[MAXN];
-
 memset(dp, 0, sizeof(dp));
 dp[0] = 1;
 

@@ -17,7 +17,7 @@ La dp funziona quando il problema ha tutte e tre queste proprietà. Ognuna rispo
 Un problema ha **sottoproblemi sovrapponibili** quando la ricorsione ingenua calcola più volte lo **stesso** sottoproblema.
 
 <div style="display:flex; justify-content:center;">
-  <svg viewBox="0 0 620 260" style="width:min(100%, 510px); height:auto;" role="img" aria-label="Albero delle chiamate di Fibonacci: F(3) e F(2) compaiono più volte">
+  <svg viewBox="0 0 620 260" style="width:min(100%, 470px); height:auto;" role="img" aria-label="Albero delle chiamate di Fibonacci: F(3) e F(2) compaiono più volte">
     <g style="fill:none; stroke:var(--c-border-strong); stroke-width:1.5;">
       <path d="M300,47 L170,78" />
       <path d="M300,47 L430,78" />

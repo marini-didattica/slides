@@ -133,7 +133,6 @@ inline int mod(int a, int b) {
 int enumera(int N, int M) {
   int a = -1; // G_0
   int b = 0;  // G_1
-
   for (int i = 2; i <= N; i++) {
     // G_i = (G_{i-1} - G_{i-2}) * (i - 1) + G_{i-1}
     int c = mod((b - a) * (i - 1) + b, M);

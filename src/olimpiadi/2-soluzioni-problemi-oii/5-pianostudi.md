@@ -71,7 +71,7 @@ Poiché i corsi sono ordinati per fine, gli istanti $a_j$ sono crescenti: una **
 layout: default
 ---
 
-# Codice
+# Codice · ordinamento
 
 ```cpp
 struct Corso { int da, a, crediti; };
@@ -88,7 +88,15 @@ int pianifica(int N, int da[], int a[], int crediti[]) {
   vector<int> fine(N);
   for (int i = 0; i < N; i++)
     fine[i] = c[i].a;
+```
 
+---
+layout: default
+---
+
+# Codice · la DP
+
+```cpp
   vector<int> dp(N + 1, 0); // dp[i] = top con i primi i corsi
   for (int i = 0; i < N; i++) {
     // corsi compatibili: quelli con fine < inizio del corso i
